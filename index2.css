@@ -1,0 +1,202 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main-grid{
+	display: grid;
+	grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+.shop{
+	background-image: url(img/main/shop_header_back.jpg);
+}
+.shop_about{
+	background-image: url(img/main/about.jpg);
+}
+.shop_contacts{
+	background-image: url(img/main/genshn.png);
+}
+header{
+	height: 60vh;
+	grid-column: 1 / -1;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.picter{
+	width: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 20px;
+}
+nav{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-size: 23px;
+}
+nav ul{
+	width: 40%;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tiles_shop{
+	display: grid;
+	grid-column: 2 / -2;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 40px;
+	margin-bottom: 100px;
+}
+.tile_shop{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+.tile_shop img{
+	/*grid-column: 1 / -1;*/
+/*	grid-row: 1 / -1;*/
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.item_text{
+	grid-column: 2 / -2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	margin: 10px 0;
+	text-align: center;
+	height: 15vh;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: black;
+	color: white;
+	height: 20vh;
+	padding: 20px 0;
+}
+.box{
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 30px;
+}
+.bnt{
+	width: 80%;
+	margin: 20px;
+	padding: 5px 10px;
+	background: black;
+	border-radius: 10%;
+	text-align: center;
+}
+h3, p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bnt:hover{
+	transition: 1s;
+	background: coral;
+}
+.about_text, .shop_text, .contacts_text{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 60px;
+	margin-top: 80px;
+}
+.about_box{
+	grid-column: 2 / -2;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 60px 0;
+	padding-right: 15vw;
+}
+hr{
+	width: 200px;
+	height: 4px;
+	border: none;
+	background: black;
+}
+.about_tiles{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column: 1 / -1;
+	margin-top: 10px;
+}
+.item img{
+	width: 200px;
+	margin-top: 40px;
+	object-fit: cover;
+}
+.item{
+	text-align: center;
+}
+.contacts_box{
+	display: grid;
+	display: flex;
+	height: 15vh;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	grid-column: 2 / -2;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	font-size: 20px;
+}
+input{
+	border: none;
+	border-bottom: 1px solid black;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 5px;
+	margin: 30px 0;
+}
+.form{
+	grid-column: 2 / -2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#submit{
+	width: 200px;
+	background: black;
+	color: white;
+	border-radius: 40px;
+	margin: 0 auto;
+}
+.map{
+	grid-column: 2 / -2;
+	padding-top: 100px;
+}
+iframe{
+	grid-column: 1 / -1;
+	width: 100%;
+	height: 50vh;
+	margin-top: 20px;
+}
+input:focus{
+	outline: none;
+}
+#submit:hover{
+	cursor: pointer;
+}
+.item p{
+	color: grey;
+}
